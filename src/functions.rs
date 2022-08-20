@@ -2,6 +2,8 @@
 
 use rand::Rng;
 
-fn generate_random() {
-
+pub fn print_range(a: isize, b: isize) -> () {
+    for item in a..b {
+        println!(":: {}", item)
+    }
 }

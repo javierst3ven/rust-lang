@@ -12,7 +12,7 @@ fn main() {
     add_two();
 }
 
-fn add_two() -> () {
+fn add_two() -> i8 {
     println!("Write two numbers: ");
     let mut first_number = String::new();
     let mut second_number = String::new();
@@ -21,4 +21,5 @@ fn add_two() -> () {
     let first_number: isize = first_number.trim().parse().expect("Type a number");
     let second_number: isize = second_number.trim().parse().expect("Type a number");
     functions::print_range(first_number, second_number);
+    return 0
 }

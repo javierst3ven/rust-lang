@@ -3,11 +3,11 @@
 use rand::Rng;
 
 pub fn print_range(a: isize, b: isize) -> () {
-    for item in a..b {
+    for item in a..b+1 {
         println!(":: {}", item)
     }
 }
 
 pub fn num_range(a: isize, b: isize) -> isize {
-    rand::thread_rng().gen_range(a..b)
+    rand::thread_rng().gen_range(a..=b)
 }
